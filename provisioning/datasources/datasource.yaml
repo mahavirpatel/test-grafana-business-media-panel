@@ -1,0 +1,41 @@
+apiversion: 1
+
+datasources:
+  - name: TSDB
+    uid: LOCALTSDB
+    type: postgres
+    editable: true
+    isDefault: true
+    orgId: 1
+    url: db:5432
+    user: myuser
+    database: mydatabase
+    secureJsonData:
+      password: mypassword
+    jsonData:
+      sslmode: 'disable'         # explicitly quoted
+      maxOpenConns: 0
+      maxIdleConns: 2
+      connMaxLifetime: 14400
+      postgresVersion: 1200
+      timescaledb: true
+  # - name: TSDB
+  #   uid: LOCALTSDB
+  #   type: postgres
+  #   url: db:5432
+  #   # url: ec2-3-238-39-254.compute-1.amazonaws.com:5432
+  #   database: mydatabase
+  #   # database: tsdb
+  #   user: myuser
+  #   # user: grafana
+  #   secureJsonData:
+  #     password: mypassword
+  #     # password: dublin-monaural-city-sedge
+  #   jsonData:
+  #     sslmode: "disable" # disable/require/verify-ca/verify-full
+  #     # sslmode: "disable"
+  #     maxOpenConns: 0         # Grafana v5.4+
+  #     maxIdleConns: 2         # Grafana v5.4+
+  #     connMaxLifetime: 14400  # Grafana v5.4+
+  #     postgresVersion: 1200 # 903=9.3, 904=9.4, 905=9.5, 906=9.6, 1000=10
+  #     timescaledb: true

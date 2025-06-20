@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: TestDashboard    # A uniquely identifiable name for the provider
+    id: test-grafana-business-model-plugin
+    orgId: 1
+    folder: 'Test' # The folder where to place the dashboards
+    folderUid: 'TestFolder'
+    type: file
+    options:
+      path: /var/lib/grafana/dashboards/TestDashboard
