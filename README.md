@@ -20,4 +20,4 @@ open a browser to the following url: http://localhost:3000/
 
 Log in with credentials: admin/admin
 
-Go to the _Dashboards_ menu, then click on the _Test_ then _Test Dashboard_ dashabord to display it.
+Go to the _Dashboards_ menu, then click on the _Test_ then _Test Dashboard_ dashboard to display it.
